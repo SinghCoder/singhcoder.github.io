@@ -22,27 +22,27 @@
 &lt;/ul&gt;
 &lt;p&gt;The actual exercises I do, and the number of reps/PRs etc are tracked in the Cult app itself, and for now I had not went into finding the API for that to extract that data into sheet.. Maybe sometime in near future :)&lt;/p&gt;
 &lt;h2 id=&#34;how-i-track-all-this&#34;&gt;How I track all this? &lt;a href=&#34;#how-i-track-all-this&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;weight&#34;&gt;Weight &lt;a href=&#34;#weight&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I have a simple google sheet which looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;image.png&#34; alt=&#34;weight&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/image.png&#34; alt=&#34;weight&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Column D and E are calculated as &lt;code&gt;Di = Ci - Bi&lt;/code&gt;, &lt;code&gt;Ei = Bi+1 - Ci&lt;/code&gt; tracking how much weight changed in that day, and the next day.&lt;/p&gt;
 &lt;p&gt;Until sometime back, this was the interface I used for updating weight everyday: open sheet, add date if not there, add the weight entries. I have a better way which uses this sheet itself as database/backend, gonna come to it at the end.&lt;/p&gt;
 &lt;h3 id=&#34;number-of-weeks-i-had-been-regular-in-gymnumber-of-classes-attended&#34;&gt;Number of weeks I had been regular in gym/number of classes attended. &lt;a href=&#34;#number-of-weeks-i-had-been-regular-in-gymnumber-of-classes-attended&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This data is something I occasionally run a script (I should probably automate this) which calls CULT&amp;rsquo;s API to get the data, and I put that manually into a google sheet then.
 Figuring out exact API was done by downloading raw cult apk, pass it through &lt;a href=&#34;https://github.com/shroudedcode/apk-mitm&#34;&gt;apk-mitm&lt;/a&gt; and then use &lt;a href=&#34;https://httptoolkit.com/&#34;&gt;http-toolkit&lt;/a&gt; to intercept the traffic while I visit corresponding page in the app to see the API that the app calls..&lt;/p&gt;
 &lt;p&gt;The script looks something like in &lt;a href=&#34;./cult_data_extract.py&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The sheet then looks like &lt;img src=&#34;image-1.png&#34; alt=&#34;Cult-Fit-Journey&#34;&gt; with self-explanatory column names.&lt;/p&gt;
+&lt;p&gt;The sheet then looks like &lt;img src=&#34;images/image-1.png&#34; alt=&#34;Cult-Fit-Journey&#34;&gt; with self-explanatory column names.&lt;/p&gt;
 &lt;p&gt;Again, this sheet also acts as a backend now, with frontend I will describe at the end on how do I visualize all this.&lt;/p&gt;
 &lt;h3 id=&#34;occasional-bmi-and-other-metrics-from-inbody-machine-installed-in-the-gym-i-go-to&#34;&gt;Occasional BMI and other metrics from InBody machine installed in the gym I go to. &lt;a href=&#34;#occasional-bmi-and-other-metrics-from-inbody-machine-installed-in-the-gym-i-go-to&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is also backed by google sheet, and I have no automated way to get this data, I just manually enter it into the sheet.&lt;/p&gt;
 &lt;p&gt;From the GYM, I get the data printed on a page, from which I manually enter to the frontend I am gonna describe next.&lt;/p&gt;
 &lt;p&gt;The sheet by the way looks like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;image-2.png&#34; alt=&#34;InBody&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/image-2.png&#34; alt=&#34;InBody&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;frontend-for-all-this&#34;&gt;Frontend for all this &lt;a href=&#34;#frontend-for-all-this&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Entering all this data manually into the google sheet is a hard task, which lead me sometimes missing recording the data. So, I tried to follow the advice that &lt;code&gt;Atomic Habits&lt;/code&gt; book&amp;rsquo;s second rule of habit formation preaches: &lt;code&gt;Make it easy&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;So, the simplest way I thought was having an app in which I can quickly crunch in numbers (Ik google sheet also is the same thing, but the interface is hard to enter on the phone), so I used &lt;a href=&#34;https://www.appsheet.com/&#34;&gt;appsheet&lt;/a&gt; to quickly create a UI on top of the google sheets.&lt;/p&gt;
 &lt;p&gt;My app looks something like this:&lt;/p&gt;
-&lt;h3 id=&#34;landing-screen&#34;&gt;Landing screen &lt;a href=&#34;#landing-screen&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;image-3.png&#34; alt=&#34;landing screen&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This shows the weight entries, and a &lt;code&gt;+&lt;/code&gt; button to add in new entries, and clicking on anyone brings interface like this: &lt;img src=&#34;image-4.png&#34; alt=&#34;edit-mode&#34;&gt;, where I can edit during night to record night weight.&lt;/p&gt;
+&lt;h3 id=&#34;landing-screen&#34;&gt;Landing screen &lt;a href=&#34;#landing-screen&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;images/image-3.png&#34; alt=&#34;landing screen&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This shows the weight entries, and a &lt;code&gt;+&lt;/code&gt; button to add in new entries, and clicking on anyone brings interface like this: &lt;img src=&#34;images/image-4.png&#34; alt=&#34;edit-mode&#34;&gt;, where I can edit during night to record night weight.&lt;/p&gt;
 &lt;h3 id=&#34;inbody-results&#34;&gt;InBody Results &lt;a href=&#34;#inbody-results&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Exactly similar to Landing screen, but another tab at the bottom for this.&lt;/p&gt;
 &lt;h3 id=&#34;charts---weight-and-classes&#34;&gt;Charts - Weight and Classes &lt;a href=&#34;#charts---weight-and-classes&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The third tab has charts for how weight is progressing and for cult gym classes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;image-5.png&#34; alt=&#34;weight chart&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;image-6.png&#34; alt=&#34;gym-classes&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/image-5.png&#34; alt=&#34;weight chart&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/image-6.png&#34; alt=&#34;gym-classes&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;inbody-charts&#34;&gt;InBody charts &lt;a href=&#34;#inbody-charts&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The last one has inbody charts for metrics: Body Fat Percentage, Total Fat (kg), Muscle Mass (kg), Visceral Fat Level, Waist Hip Ratio.&lt;/p&gt;
 </description>
     </item>

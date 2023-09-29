@@ -25,7 +25,7 @@ The actual exercises I do, and the number of reps/PRs etc are tracked in the Cul
 
 I have a simple google sheet which looks like this:
 
-![weight](image.png)
+![weight](images/image.png)
 
 Column D and E are calculated as `Di = Ci - Bi`, `Ei = Bi+1 - Ci` tracking how much weight changed in that day, and the next day.
 
@@ -38,7 +38,7 @@ Figuring out exact API was done by downloading raw cult apk, pass it through [ap
 
 The script looks something like in [this](./cult_data_extract.py).
 
-The sheet then looks like ![Cult-Fit-Journey](image-1.png) with self-explanatory column names.
+The sheet then looks like ![Cult-Fit-Journey](images/image-1.png) with self-explanatory column names.
 
 Again, this sheet also acts as a backend now, with frontend I will describe at the end on how do I visualize all this.
 
@@ -50,7 +50,7 @@ From the GYM, I get the data printed on a page, from which I manually enter to t
 
 The sheet by the way looks like:
 
-![InBody](image-2.png)
+![InBody](images/image-2.png)
 
 ## Frontend for all this
 
@@ -62,9 +62,9 @@ My app looks something like this:
 
 ### Landing screen
 
-![landing screen](image-3.png)
+![landing screen](images/image-3.png)
 
-This shows the weight entries, and a `+` button to add in new entries, and clicking on anyone brings interface like this: ![edit-mode](image-4.png), where I can edit during night to record night weight.
+This shows the weight entries, and a `+` button to add in new entries, and clicking on anyone brings interface like this: ![edit-mode](images/image-4.png), where I can edit during night to record night weight.
 
 ### InBody Results
 
@@ -74,9 +74,9 @@ Exactly similar to Landing screen, but another tab at the bottom for this.
 
 The third tab has charts for how weight is progressing and for cult gym classes.
 
-![weight chart](image-5.png)
+![weight chart](images/image-5.png)
 
-![gym-classes](image-6.png)
+![gym-classes](images/image-6.png)
 
 ### InBody charts
 
