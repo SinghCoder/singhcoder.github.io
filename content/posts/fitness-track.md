@@ -1,6 +1,7 @@
 +++
 title = 'Fitness Track'
 date = 2023-09-29T20:48:38+05:30
+tags: [fitness]
 draft = false
 +++
 
@@ -15,6 +16,8 @@ Slight background: I am on the journey to be the person who goes to gym daily, m
 - Weight (morning and night)
 - Number of weeks I had been regular in gym/number of classes attended.
 - Occasional BMI and other metrics from [InBody machine](https://www.inbody.in/) installed in the gym I go to.
+
+The actual exercises I do, and the number of reps/PRs etc are tracked in the Cult app itself, and for now I had not went into finding the API for that to extract that data into sheet.. Maybe sometime in near future :)
 
 ## How I track all this?
 
