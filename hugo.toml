@@ -2,3 +2,10 @@ baseURL = 'https://singhcoder.github.io/'
 languageCode = 'en-us'
 title = 'My Personal Blog'
 theme = 'flat'
+googleAnalytics = 'G-TR6P06RWHL'
+disqusShortname = 'singhcoder'
+[params]
+  description = "SinghCoder's personal blog"
+  images = ['site-feature-image.jpg']
+[social]
+  twitter = 'singhhcoder'
