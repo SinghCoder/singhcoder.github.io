@@ -1,7 +1,7 @@
 +++
 title = 'Fitness Track'
 date = 2023-09-29T20:48:38+05:30
-tags: [fitness]
+tags = [ "fitness" ]
 draft = false
 +++
 

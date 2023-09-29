@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Personal Blog</title>
-    <link>https://singhcoder.github.io/</link>
-    <description>Recent content on My Personal Blog</description>
+    <title>fitness on My Personal Blog</title>
+    <link>https://singhcoder.github.io/tags/fitness/</link>
+    <description>Recent content in fitness on My Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2023 20:48:38 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 20:48:38 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/tags/fitness/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fitness Track</title>
       <link>https://singhcoder.github.io/posts/fitness-track/</link>
@@ -44,19 +44,6 @@ Figuring out exact API was done by downloading raw cult apk, pass it through &lt
 &lt;p&gt;&lt;img src=&#34;image-5.png&#34; alt=&#34;weight chart&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;image-6.png&#34; alt=&#34;gym-classes&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;inbody-charts&#34;&gt;InBody charts &lt;a href=&#34;#inbody-charts&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The last one has inbody charts for metrics: Body Fat Percentage, Total Fat (kg), Muscle Mass (kg), Visceral Fat Level, Waist Hip Ratio.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://singhcoder.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 29 Sep 2023 20:26:28 +0530</pubDate>
-      
-      <guid>https://singhcoder.github.io/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;hey-there-&#34;&gt;Hey There 👋 &lt;a href=&#34;#hey-there-&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.&lt;/p&gt;
-&lt;p&gt;Well, that was it for the first post, stay tuned for the next one.&lt;/p&gt;
-&lt;p&gt;Scoop: next one is gonna be something related to the fitness journey I am on. 🏋️‍♂️&lt;/p&gt;
-&lt;p&gt;And LOL, GPT helping me with these emojis is just LIT 🔥&lt;/p&gt;
 </description>
     </item>
     

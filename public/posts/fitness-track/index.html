@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+
+
+
+<title>Fitness Track | My Personal Blog</title>
+<link rel="canonical" href="https://singhcoder.github.io/posts/fitness-track/">
+<meta name="description" content="Fitness Tracking 🔗The post will describe how I track my fitness journey so far.
+Slight background: I am on the journey to be the person who goes to gym daily, my goal is to reduce weight, and get lean. I go to cult for gym.
+What all I track so far? 🔗 Weight (morning and night) Number of weeks I had been regular in gym/number of classes attended. Occasional BMI and other metrics from InBody machine installed in the gym I go to." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Fitness Track | My Personal Blog" />
+<meta property="og:url" content="https://singhcoder.github.io/posts/fitness-track/" />
+<meta property="og:description" content="Fitness Tracking 🔗The post will describe how I track my fitness journey so far.
+Slight background: I am on the journey to be the person who goes to gym daily, my goal is to reduce weight, and get lean. I go to cult for gym.
+What all I track so far? 🔗 Weight (morning and night) Number of weeks I had been regular in gym/number of classes attended. Occasional BMI and other metrics from InBody machine installed in the gym I go to." />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/icofont/icofont.min.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+        <header class="header-wrapper">
+    <div class="header">
+        <a class="site-title" href="https://singhcoder.github.io/">My Personal Blog</a>
+
+        <nav class="menu">
+            
+        </nav>
+    </div>
+</header>
+
+        <main class="main-wrapper">
+            <div class="main">
+                
+
+<section class="single">
+    <h1 class="title">Fitness Track</h1>
+
+    <div class="tip">
+        <time datetime="2023-09-29 20:48:38 &#43;0530 IST">2023/09/29</time>
+        <span class="split">·</span>
+        <span> 606 words </span>
+        <span class="split">·</span>
+        <span>
+            3 minutes to read
+        </span>
+    </div>
+
+    <div class="taxonomies">
+        
+
+        
+            <div>
+                Tags:
+                
+                    <a href="/tags/fitness">fitness</a>
+                
+            </div>
+        
+    </div>
+
+    <hr />
+
+    <div class="content">
+        <h1 id="fitness-tracking">Fitness Tracking <a href="#fitness-tracking" class="anchor">🔗</a></h1><p>The post will describe how I track my fitness journey so far.</p>
+<p>Slight background: I am on the journey to be the person who goes to gym daily, my goal is to reduce weight, and get lean. I go to <a href="https://www.cult.fit/">cult</a> for gym.</p>
+<h2 id="what-all-i-track-so-far">What all I track so far? <a href="#what-all-i-track-so-far" class="anchor">🔗</a></h2><ul>
+<li>Weight (morning and night)</li>
+<li>Number of weeks I had been regular in gym/number of classes attended.</li>
+<li>Occasional BMI and other metrics from <a href="https://www.inbody.in/">InBody machine</a> installed in the gym I go to.</li>
+</ul>
+<p>The actual exercises I do, and the number of reps/PRs etc are tracked in the Cult app itself, and for now I had not went into finding the API for that to extract that data into sheet.. Maybe sometime in near future :)</p>
+<h2 id="how-i-track-all-this">How I track all this? <a href="#how-i-track-all-this" class="anchor">🔗</a></h2><h3 id="weight">Weight <a href="#weight" class="anchor">🔗</a></h3><p>I have a simple google sheet which looks like this:</p>
+<p><img src="image.png" alt="weight"></p>
+<p>Column D and E are calculated as <code>Di = Ci - Bi</code>, <code>Ei = Bi+1 - Ci</code> tracking how much weight changed in that day, and the next day.</p>
+<p>Until sometime back, this was the interface I used for updating weight everyday: open sheet, add date if not there, add the weight entries. I have a better way which uses this sheet itself as database/backend, gonna come to it at the end.</p>
+<h3 id="number-of-weeks-i-had-been-regular-in-gymnumber-of-classes-attended">Number of weeks I had been regular in gym/number of classes attended. <a href="#number-of-weeks-i-had-been-regular-in-gymnumber-of-classes-attended" class="anchor">🔗</a></h3><p>This data is something I occasionally run a script (I should probably automate this) which calls CULT&rsquo;s API to get the data, and I put that manually into a google sheet then.
+Figuring out exact API was done by downloading raw cult apk, pass it through <a href="https://github.com/shroudedcode/apk-mitm">apk-mitm</a> and then use <a href="https://httptoolkit.com/">http-toolkit</a> to intercept the traffic while I visit corresponding page in the app to see the API that the app calls..</p>
+<p>The script looks something like in <a href="./cult_data_extract.py">this</a>.</p>
+<p>The sheet then looks like <img src="image-1.png" alt="Cult-Fit-Journey"> with self-explanatory column names.</p>
+<p>Again, this sheet also acts as a backend now, with frontend I will describe at the end on how do I visualize all this.</p>
+<h3 id="occasional-bmi-and-other-metrics-from-inbody-machine-installed-in-the-gym-i-go-to">Occasional BMI and other metrics from InBody machine installed in the gym I go to. <a href="#occasional-bmi-and-other-metrics-from-inbody-machine-installed-in-the-gym-i-go-to" class="anchor">🔗</a></h3><p>This is also backed by google sheet, and I have no automated way to get this data, I just manually enter it into the sheet.</p>
+<p>From the GYM, I get the data printed on a page, from which I manually enter to the frontend I am gonna describe next.</p>
+<p>The sheet by the way looks like:</p>
+<p><img src="image-2.png" alt="InBody"></p>
+<h2 id="frontend-for-all-this">Frontend for all this <a href="#frontend-for-all-this" class="anchor">🔗</a></h2><p>Entering all this data manually into the google sheet is a hard task, which lead me sometimes missing recording the data. So, I tried to follow the advice that <code>Atomic Habits</code> book&rsquo;s second rule of habit formation preaches: <code>Make it easy</code>.</p>
+<p>So, the simplest way I thought was having an app in which I can quickly crunch in numbers (Ik google sheet also is the same thing, but the interface is hard to enter on the phone), so I used <a href="https://www.appsheet.com/">appsheet</a> to quickly create a UI on top of the google sheets.</p>
+<p>My app looks something like this:</p>
+<h3 id="landing-screen">Landing screen <a href="#landing-screen" class="anchor">🔗</a></h3><p><img src="image-3.png" alt="landing screen"></p>
+<p>This shows the weight entries, and a <code>+</code> button to add in new entries, and clicking on anyone brings interface like this: <img src="image-4.png" alt="edit-mode">, where I can edit during night to record night weight.</p>
+<h3 id="inbody-results">InBody Results <a href="#inbody-results" class="anchor">🔗</a></h3><p>Exactly similar to Landing screen, but another tab at the bottom for this.</p>
+<h3 id="charts---weight-and-classes">Charts - Weight and Classes <a href="#charts---weight-and-classes" class="anchor">🔗</a></h3><p>The third tab has charts for how weight is progressing and for cult gym classes.</p>
+<p><img src="image-5.png" alt="weight chart"></p>
+<p><img src="image-6.png" alt="gym-classes"></p>
+<h3 id="inbody-charts">InBody charts <a href="#inbody-charts" class="anchor">🔗</a></h3><p>The last one has inbody charts for metrics: Body Fat Percentage, Total Fat (kg), Muscle Mass (kg), Visceral Fat Level, Waist Hip Ratio.</p>
+
+    </div>
+
+    
+</section>
+
+
+            </div>
+            <div class="side">
+                
+                    <div class="side-recent">
+    <h2 class="side-title">
+        <a href="/posts/">Recent Posts</a>
+    </h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/posts/fitness-track/">Fitness Track</a>
+            </li>
+        
+            <li>
+                <a href="/posts/my-first-post/">My First Post</a>
+            </li>
+        
+    </ul>
+</div>
+
+                
+                <div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        
+    </ul>
+</div>
+
+                <div class="side-tags">
+    <h2>Tags</h2>
+    <hr />
+
+    <ul>
+        
+            <li>
+                <a href="/tags/fitness">fitness (1)</a>
+            </li>
+        
+    </ul>
+</div>
+
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer-row">
+        
+            
+            
+                <a class="footer-item" href="https://singhcoder.github.io/posts/index.xml">
+                    Feed of Posts
+                    <i class="icofont-rss"></i>
+                </a>
+            
+        
+
+        
+            
+            
+        
+    </div>
+
+    
+</footer>
+
+    </body>
+</html>
