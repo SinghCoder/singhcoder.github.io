@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My Personal Blog</title>
+    <link>https://singhcoder.github.io/posts/</link>
+    <description>Recent content in Posts on My Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Sep 2023 20:26:28 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://singhcoder.github.io/posts/my-first-post/</link>
+      <pubDate>Fri, 29 Sep 2023 20:26:28 +0530</pubDate>
+      
+      <guid>https://singhcoder.github.io/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;hey-there-&#34;&gt;Hey There 👋 &lt;a href=&#34;#hey-there-&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.&lt;/p&gt;
+&lt;p&gt;Well, that was it for the first post, stay tuned for the next one.&lt;/p&gt;
+&lt;p&gt;Scoop: next one is gonna be something related to the fitness journey I am on. 🏋️‍♂️&lt;/p&gt;
+&lt;p&gt;And LOL, GPT helping me with these emojis is just LIT 🔥&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
