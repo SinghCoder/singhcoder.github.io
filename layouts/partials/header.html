@@ -1,6 +1,8 @@
 <head>
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    <!-- Add google site verification meta tag -->
+    <meta name="google-site-verification" content="google-site-verification: {{ .Site.Params.google_site_verification }}" />
 </head>
 
 <header class="header-wrapper">

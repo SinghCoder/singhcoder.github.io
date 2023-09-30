@@ -7,5 +7,6 @@ disqusShortname = 'singhcoder'
 [params]
   description = "SinghCoder's personal blog"
   images = ['site-feature-image.jpg']
+  google_site_verification = 'google-site-verification=VNEQK6FTsfRUopGbrsNiULofIx7b4Y6TSxzbH3hx_c0'
 [social]
   twitter = 'singhhcoder'
