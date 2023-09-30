@@ -15,8 +15,7 @@ This one was slight tricky to implement because there did not seem to be an API 
 
 Earlier I was trying with ~500 IDs but the API kept crashing, and even with 300 IDs, some of the intermediate IDs required removal (God knows why), and finally I got a JSON which looked like this:
 
-<details> 
-<summary>JSON</summary>
+{{< details "JSON" >}}
 ```json
 {
     "tenantId": 1,
@@ -81,7 +80,7 @@ Earlier I was trying with ~500 IDs but the API kept crashing, and even with 300 
     ]
 }
 ```
-</details>
+{{< /details >}}
 
 Most of the parameters are self explanatory, rest I found by analyzing some of the JSONs manually. The analysis script using which I finally created a CSV is [analysis.py](./analysis.py), and the script to extract those JSONs is [cult_data_exercises.py](./cult_data_exercises.py).
 

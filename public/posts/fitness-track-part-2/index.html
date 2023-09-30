@@ -76,10 +76,10 @@ This one was slight tricky to implement because there did not seem to be an API 
     <div class="tip">
         <time datetime="2023-09-30 16:31:59 &#43;0530 IST">2023/09/30</time>
         <span class="split">·</span>
-        <span> 183 words </span>
+        <span> 300 words </span>
         <span class="split">·</span>
         <span>
-            1 minutes to read
+            2 minutes to read
         </span>
     </div>
 
@@ -105,7 +105,72 @@ This one was slight tricky to implement because there did not seem to be an API 
 <p>I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.</p>
 <p>This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API <code>/api/v2/fitnessplanner/exercisesForLogging</code> with corresponding exerciseId under <code>exerciseIds</code> list parameter. I generated ~2-300 IDs nearby that ID and passed in the API.</p>
 <p>Earlier I was trying with ~500 IDs but the API kept crashing, and even with 300 IDs, some of the intermediate IDs required removal (God knows why), and finally I got a JSON which looked like this:</p>
-<!-- raw HTML omitted -->
+<details>
+    <summary>JSON</summary>
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tenantId&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;userId&#34;</span>: <span style="color:#e6db74">&#34;89760760&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;exerciseId&#34;</span>: <span style="color:#ae81ff">1555609163</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;herculesExerciseId&#34;</span>: <span style="color:#e6db74">&#34;602621587d678600085608e2&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;executionType&#34;</span>: <span style="color:#e6db74">&#34;TIMED&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;meta&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;weightUnit&#34;</span>: <span style="color:#e6db74">&#34;KG&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;durationUnit&#34;</span>: <span style="color:#e6db74">&#34;SECOND&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;distanceUnit&#34;</span>: <span style="color:#e6db74">&#34;KILOMETRE&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;personalBest&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#ae81ff">791910</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;createdOn&#34;</span>: <span style="color:#e6db74">&#34;2023-02-12T08:38:49.000+00:00&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;lastModifiedOn&#34;</span>: <span style="color:#e6db74">&#34;2023-02-12T08:38:49.000+00:00&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;createdBy&#34;</span>: <span style="color:#e6db74">&#34;system&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;tenantId&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;userId&#34;</span>: <span style="color:#e6db74">&#34;89760760&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;herculesExerciseId&#34;</span>: <span style="color:#e6db74">&#34;602621587d678600085608e2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;userFitnessLevel&#34;</span>: <span style="color:#e6db74">&#34;INTERMEDIATE&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#ae81ff">5400</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;distance&#34;</span>: <span style="color:#ae81ff">11.24</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;fromTime&#34;</span>: <span style="color:#e6db74">&#34;2023-02-12T08:38:49Z&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;previousBest&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#ae81ff">1860</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;distance&#34;</span>: <span style="color:#ae81ff">4.04</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;thumbnailUrl&#34;</span>: <span style="color:#e6db74">&#34;hercules/production/assets/movements/images/CROSS_TRAINER_v1631535828209_aa25d179-c9fa-4570-acc7-3d7a489b7ee9.jpg&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;exerciseName&#34;</span>: <span style="color:#e6db74">&#34;Cross Trainer&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;exerciseType&#34;</span>: <span style="color:#e6db74">&#34;DISTANCE&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;lateral&#34;</span>: <span style="color:#e6db74">&#34;BILATERAL&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;templateLog&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sequence&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;unilateralDirection&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;distance&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;value1&#34;</span>: <span style="color:#e6db74">&#34;4.04&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;unit1&#34;</span>: <span style="color:#e6db74">&#34;kms&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;separator&#34;</span>: <span style="color:#e6db74">&#34;x&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;value2&#34;</span>: <span style="color:#e6db74">&#34;31&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;unit2&#34;</span>: <span style="color:#e6db74">&#34;mins&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;fpExecutionLogs&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;sequence&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;unilateralDirection&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;weight&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#ae81ff">1860</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;count&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;distance&#34;</span>: <span style="color:#ae81ff">4.04</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;value1&#34;</span>: <span style="color:#e6db74">&#34;4.04&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;unit1&#34;</span>: <span style="color:#e6db74">&#34;kms&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;separator&#34;</span>: <span style="color:#e6db74">&#34;/&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;value2&#34;</span>: <span style="color:#e6db74">&#34;31&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;unit2&#34;</span>: <span style="color:#e6db74">&#34;mins&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</details>
 <p>Most of the parameters are self explanatory, rest I found by analyzing some of the JSONs manually. The analysis script using which I finally created a CSV is <a href="./analysis.py">analysis.py</a>, and the script to extract those JSONs is <a href="./cult_data_exercises.py">cult_data_exercises.py</a>.</p>
 <p>Finally, it looks in my app like this:</p>
 <p><img src="images/image.png" alt="personal bests"></p>
