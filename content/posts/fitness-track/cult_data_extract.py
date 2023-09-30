@@ -7,7 +7,7 @@ import requests
 # Replace <SECRET> with your actual secret token
 headers = {
     "accept": "application/json",
-    "cookie": "", # get from the cult website, any curl call, get the value of header `Cookie`...
+    "cookie": "<SECRET>", # get from the cult website, any curl call, get the value of header `Cookie`...
     "clientversion": "10.08",
     "connection": "Keep-Alive",
     "content-type": "application/json; charset=utf-8"

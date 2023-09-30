@@ -6,7 +6,24 @@
     <description>Recent content in Posts on My Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Sep 2023 20:48:38 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Sep 2023 16:31:59 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fitness Track Part 2</title>
+      <link>https://singhcoder.github.io/posts/fitness-track-part-2/</link>
+      <pubDate>Sat, 30 Sep 2023 16:31:59 +0530</pubDate>
+      
+      <guid>https://singhcoder.github.io/posts/fitness-track-part-2/</guid>
+      <description>&lt;h2 id=&#34;fitness-track-part-2&#34;&gt;Fitness Track Part 2 &lt;a href=&#34;#fitness-track-part-2&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This post is continuation of &lt;a href=&#34;https://singhcoder.github.io/posts/fitness-track/&#34;&gt;Fitness Track Part 1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.&lt;/p&gt;
+&lt;p&gt;This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API &lt;code&gt;/api/v2/fitnessplanner/exercisesForLogging&lt;/code&gt; with corresponding exerciseId under &lt;code&gt;exerciseIds&lt;/code&gt; list parameter. I generated ~2-300 IDs nearby that ID and passed in the API.&lt;/p&gt;
+&lt;p&gt;Earlier I was trying with ~500 IDs but the API kept crashing, and even with 300 IDs, some of the intermediate IDs required removal (God knows why), and finally I got a JSON which looked like this:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Most of the parameters are self explanatory, rest I found by analyzing some of the JSONs manually. The analysis script using which I finally created a CSV is &lt;a href=&#34;./analysis.py&#34;&gt;analysis.py&lt;/a&gt;, and the script to extract those JSONs is &lt;a href=&#34;./cult_data_exercises.py&#34;&gt;cult_data_exercises.py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, it looks in my app like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/image.png&#34; alt=&#34;personal bests&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Fitness Track</title>
       <link>https://singhcoder.github.io/posts/fitness-track/</link>

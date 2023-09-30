@@ -7,17 +7,17 @@
 
 
 
-<title>My First Post | My Personal Blog</title>
-<link rel="canonical" href="https://singhcoder.github.io/posts/my-first-post/">
-<meta name="description" content="Hey There 👋 🔗Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.
-Well, that was it for the first post, stay tuned for the next one.
-Scoop: next one is gonna be something related to the fitness journey I am on." />
+<title>Fitness Track Part 2 | My Personal Blog</title>
+<link rel="canonical" href="https://singhcoder.github.io/posts/fitness-track-part-2/">
+<meta name="description" content="Fitness Track Part 2 🔗This post is continuation of Fitness Track Part 1.
+I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.
+This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API /api/v2/fitnessplanner/exercisesForLogging with corresponding exerciseId under exerciseIds list parameter." />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="My First Post | My Personal Blog" />
-<meta property="og:url" content="https://singhcoder.github.io/posts/my-first-post/" />
-<meta property="og:description" content="Hey There 👋 🔗Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.
-Well, that was it for the first post, stay tuned for the next one.
-Scoop: next one is gonna be something related to the fitness journey I am on." />
+<meta property="og:title" content="Fitness Track Part 2 | My Personal Blog" />
+<meta property="og:url" content="https://singhcoder.github.io/posts/fitness-track-part-2/" />
+<meta property="og:description" content="Fitness Track Part 2 🔗This post is continuation of Fitness Track Part 1.
+I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.
+This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API /api/v2/fitnessplanner/exercisesForLogging with corresponding exerciseId under exerciseIds list parameter." />
 
 
 
@@ -45,10 +45,10 @@ if (!doNotTrack) {
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://singhcoder.github.io/site-feature-image.jpg"/>
 
-<meta name="twitter:title" content="My First Post"/>
-<meta name="twitter:description" content="Hey There 👋 🔗Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.
-Well, that was it for the first post, stay tuned for the next one.
-Scoop: next one is gonna be something related to the fitness journey I am on."/>
+<meta name="twitter:title" content="Fitness Track Part 2"/>
+<meta name="twitter:description" content="Fitness Track Part 2 🔗This post is continuation of Fitness Track Part 1.
+I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.
+This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API /api/v2/fitnessplanner/exercisesForLogging with corresponding exerciseId under exerciseIds list parameter."/>
 <meta name="twitter:site" content="@singhhcoder"/>
 
 
@@ -71,12 +71,12 @@ Scoop: next one is gonna be something related to the fitness journey I am on."/>
                 
 
 <section class="single">
-    <h1 class="title">My First Post</h1>
+    <h1 class="title">Fitness Track Part 2</h1>
 
     <div class="tip">
-        <time datetime="2023-09-29 20:26:28 &#43;0530 IST">2023/09/29</time>
+        <time datetime="2023-09-30 16:31:59 &#43;0530 IST">2023/09/30</time>
         <span class="split">·</span>
-        <span> 87 words </span>
+        <span> 183 words </span>
         <span class="split">·</span>
         <span>
             1 minutes to read
@@ -92,10 +92,14 @@ Scoop: next one is gonna be something related to the fitness journey I am on."/>
     <hr />
 
     <div class="content">
-        <h1 id="hey-there-">Hey There 👋 <a href="#hey-there-" class="anchor">🔗</a></h1><p>Alright, I had been thinking for a long time to start writing a blog. Not necessarily something technical, but just dump some of the thoughts, learnings, and resources for my future self. Starting out finally now, and this is the first post.</p>
-<p>Well, that was it for the first post, stay tuned for the next one.</p>
-<p>Scoop: next one is gonna be something related to the fitness journey I am on. 🏋️‍♂️</p>
-<p>And LOL, GPT helping me with these emojis is just LIT 🔥</p>
+        <h2 id="fitness-track-part-2">Fitness Track Part 2 <a href="#fitness-track-part-2" class="anchor">🔗</a></h2><p>This post is continuation of <a href="/posts/fitness-track/">Fitness Track Part 1</a>.</p>
+<p>I finally extracted out the existing personal best for exercises as well, and added a new page in the appsheet to display them.</p>
+<p>This one was slight tricky to implement because there did not seem to be an API which fetches all exercise details, so on trial and error, when I selected an exercise to log it in the app, it seemed to be calling an API <code>/api/v2/fitnessplanner/exercisesForLogging</code> with corresponding exerciseId under <code>exerciseIds</code> list parameter. I generated ~2-300 IDs nearby that ID and passed in the API.</p>
+<p>Earlier I was trying with ~500 IDs but the API kept crashing, and even with 300 IDs, some of the intermediate IDs required removal (God knows why), and finally I got a JSON which looked like this:</p>
+<!-- raw HTML omitted -->
+<p>Most of the parameters are self explanatory, rest I found by analyzing some of the JSONs manually. The analysis script using which I finally created a CSV is <a href="./analysis.py">analysis.py</a>, and the script to extract those JSONs is <a href="./cult_data_exercises.py">cult_data_exercises.py</a>.</p>
+<p>Finally, it looks in my app like this:</p>
+<p><img src="images/image.png" alt="personal bests"></p>
 
     </div>
 
