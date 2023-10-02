@@ -6,7 +6,195 @@
     <description>Recent content on My Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Sep 2023 16:31:59 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 18:47:46 +0530</lastBuildDate><atom:link href="https://singhcoder.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Continuous Reading Zone</title>
+      <link>https://singhcoder.github.io/posts/continuous-reading-zone/</link>
+      <pubDate>Mon, 02 Oct 2023 18:47:46 +0530</pubDate>
+      
+      <guid>https://singhcoder.github.io/posts/continuous-reading-zone/</guid>
+      <description>&lt;h1 id=&#34;my-reading-list&#34;&gt;My Reading List &lt;a href=&#34;#my-reading-list&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;The list is mostly in the order of most recent stuff I read/downloaded to the least recent.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t done justice in writing summaries atm, I need to visit my highlights thouroughly and fix the summaries I wrote.. Maybe next weekend :)&lt;/p&gt;
+&lt;h2 id=&#34;in-progress&#34;&gt;In Progress &lt;a href=&#34;#in-progress&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dataintensive.net/&#34;&gt;Designing Data-Intensive Applications book&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I have read ~7 chapters when I started my job, but I think I need to restart from zero given I have some more experience and hands-on with those concepts.&lt;/li&gt;
+&lt;li&gt;So, I just started reading it again, and right now I am still at chapter 1 discussing the fundamentals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.in/How-Win-Friends-Influence-People/dp/0671027034&#34;&gt;How To Win Friends And Influence People&lt;/a&gt; |  10% (Part 1)
+&lt;ul&gt;
+&lt;li&gt;So far, seems like a great resource to improve my &amp;ldquo;people skills&amp;rdquo;. Quoting the three principles, the fundamental techniques in handling people directly from the book
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t criticize, condemn or complain
+&lt;ul&gt;
+&lt;li&gt;Oh man, how much I actually do criticize, lose my temper quickly, this helps me realize that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Give honest and sincere appreciation
+&lt;ul&gt;
+&lt;li&gt;This I believe I do do it, but definitely can do more. I realize the importance of #high-five channel in our company&amp;rsquo;s Slack workspace now..&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;The deepest urge un human nature is &amp;ldquo;the desire to be important&amp;rdquo; &amp;quot; - Dr. John Dewey&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Arouse in other person an eager want
+&lt;ul&gt;
+&lt;li&gt;This teaches you the &amp;ldquo;salesman skills&amp;rdquo;.. If you want something out of someone, see things from their pov, and your own, and then talk about what they want, not what you want, and show them how you can help them get what they want (obviously you should get something out of it too..)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2309.17421&#34;&gt;The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Have just read ~10% of it, but in the paper authors mostly experiment with GPT-4V, different prompting techniques, different datasets, and try to get many different types of vision related tasks done from GPT-4V.&lt;/li&gt;
+&lt;li&gt;There is no quantitative comparison (so far I read), but just qualitative comparison.. So, this mostly acts like a &amp;ldquo;What all you can do with GPT-4V&amp;rdquo; kinda resource..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://laplab.me/posts/inside-new-query-engine-of-mongodb/&#34;&gt;Inside New Query Engine of MongoDB&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Still in progress, but the blog discusses the improvements done in the Query engine piece in Mongo 7.0.0. It&amp;rsquo;s called now SBE (Slot Based Engine), and improves performance over existing engine + improves maintainability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.norulesrules.com/&#34;&gt;No Rules Rules&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Started reading it a few months back, but left in between.&lt;/li&gt;
+&lt;li&gt;It mostly talks about the Culture at Netflix - how they keep everything transparent with the employees (even the stock price before it goes out to the public), control and autonomy every employee has, basically there are no rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oreilly.com/library/view/i-heart-logs/9781491909379/&#34;&gt;I Heart Logs&lt;/a&gt; | 18%
+&lt;ul&gt;
+&lt;li&gt;This book talks about the logs, the append only data structure which is used in databases and distributed systems for consensus, replication.&lt;/li&gt;
+&lt;li&gt;Got stuck when it started giving references to Paxos and RAFT..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/grokking-simplicity&#34;&gt;Grokking Simplicity Taming complex software with functional thinking&lt;/a&gt; | 19% (4 chapters)
+&lt;ul&gt;
+&lt;li&gt;A book about functional programming.&lt;/li&gt;
+&lt;li&gt;Talks about three aspects of a program - data (inert thing), computations (transforms a set of inputs to some output), and actions (has side affects - changes universe around it in some way)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296&#34;&gt;Zero to One&lt;/a&gt; | 44%
+&lt;ul&gt;
+&lt;li&gt;Book about building great companies
+&lt;ul&gt;
+&lt;li&gt;build a monopoly, how startups are able to disrupt incumbents (space to think and innovate, no bureaucracy)&lt;/li&gt;
+&lt;li&gt;characteristics of a monopoly (propreietary tech, network effect, economy of scale, branding), last mover advantage (you should generate cash flows in the future)&lt;/li&gt;
+&lt;li&gt;the power law (~ all investments follow power law: money/time), and you don&amp;rsquo;t necessarily need to start a company. Owning 0.01% of google &amp;gt; owning 100% of some unknown failed startup, power law states that differences between companies would dwarf the differences in roles inside companies.&lt;/li&gt;
+&lt;li&gt;look for secrets, have a great foundation (founding team, co-founder(s), .. )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.in/Hard-Drive-Making-Microsoft-Empire/dp/0887306292&#34;&gt;Hard Drive: Bill Gates and the Making of the Microsoft Empire&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I don&amp;rsquo;t remember anything from this book I read, probably because I read most of it without concentration.. but seems like a great book, so gonna come back to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;todo&#34;&gt;TODO &lt;a href=&#34;#todo&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&#34;done&#34;&gt;Done &lt;a href=&#34;#done&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vectara.com/introducing-boomerang-vectaras-new-and-improved-retrieval-model/&#34;&gt;Boomerang blog&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;A SOTA embedding model&lt;/li&gt;
+&lt;li&gt;multi-lingual&lt;/li&gt;
+&lt;li&gt;compares themselves with existing open-source and closed-source embedding models on different benchmarks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jamesclear.com/atomic-habits&#34;&gt;Atomic Habits&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;The book gives a framework to understand and build habits
+&lt;ul&gt;
+&lt;li&gt;Cue - your brain gets a cue to something&lt;/li&gt;
+&lt;li&gt;Craving - it brings a craving because your brain has got neural connections which say that doing this would lead to rewards&lt;/li&gt;
+&lt;li&gt;Response - you take the action&lt;/li&gt;
+&lt;li&gt;Reward - you get a reward&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How to create habits:
+&lt;ul&gt;
+&lt;li&gt;Make it obvious&lt;/li&gt;
+&lt;li&gt;Make it attractive&lt;/li&gt;
+&lt;li&gt;Make it easy to do&lt;/li&gt;
+&lt;li&gt;Make it rewarding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How to remove bad habits:
+&lt;ul&gt;
+&lt;li&gt;Make it invisible&lt;/li&gt;
+&lt;li&gt;Make it unattractive&lt;/li&gt;
+&lt;li&gt;Make it hard to do&lt;/li&gt;
+&lt;li&gt;Make it unsatisfying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.in/GOOD-THEY-CANT-IGNORE-YOU/dp/0349415862&#34;&gt;SO GOOD THEY CAN&amp;rsquo;T IGNORE YOU&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;find your passion is a bad/dangerous advice - passion is rare.&lt;/li&gt;
+&lt;li&gt;how to think about your work: craftsman mindset - what value can I product in my job, rather than passion mindset - what value does it give me?&lt;/li&gt;
+&lt;li&gt;traits that make a great job great are rare and valuable, so you need to build rare and valuable skills - career capital
+&lt;ul&gt;
+&lt;li&gt;how? - deliberate practice.&lt;/li&gt;
+&lt;li&gt;constantly solicit feedback and improve, do self-reflection, work on what is important rather than what is immediate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;once and only when career capital is acquired, it could be traded for
+&lt;ul&gt;
+&lt;li&gt;control&lt;/li&gt;
+&lt;li&gt;mission
+&lt;ul&gt;
+&lt;li&gt;take little bets, explore to identify the actual concrete mission&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;when not to apply craftsman mindset and probably just quit:
+&lt;ul&gt;
+&lt;li&gt;job has very few opportunities to distinguish yourself by developing relevant skills&lt;/li&gt;
+&lt;li&gt;job focuses on something you think is useless or even bad for the world&lt;/li&gt;
+&lt;li&gt;job forces you to work with the people you really dislike&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.in/NO-FILTER-Sarah-Frier/dp/1982126809&#34;&gt;No Filter: The Inside Story of Instagram&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;The book is about the store of Instagram and how it came to be.&lt;/li&gt;
+&lt;li&gt;I read it a long time back and do not have a strong recollection of it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning to learn</title>
+      <link>https://singhcoder.github.io/posts/learning_to_learn/</link>
+      <pubDate>Mon, 02 Oct 2023 17:06:00 +0530</pubDate>
+      
+      <guid>https://singhcoder.github.io/posts/learning_to_learn/</guid>
+      <description>&lt;h1 id=&#34;learning-to-learn&#34;&gt;Learning to learn &lt;a href=&#34;#learning-to-learn&#34; class=&#34;anchor&#34;&gt;🔗&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;This post is mostly a documentation of my learning process. I bought a Kindle (11th gen, paperwhite edition) in May of 2022, filled it with a few books, but really started to read just a few months back (~ Aug 2023).&lt;/p&gt;
+&lt;p&gt;But now, I am kind of hooked to it :). I read books, blogs (which I send via Send to Kindle browser extension) which I find interesting or someone shared on our company Slack which they find interesting. I also send some research papers as well (mostly by using sendtokindle Amazon page where you drag/drop files).&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think I have ever completed any research paper which I had sent on my Kindle, although blogs and books I definitely have. I am still not sure if it is because research papers are boring to me, or I just have not found any interesting one yet..&lt;/p&gt;
+&lt;p&gt;Anyways, I take highlights from the content I have in my Kindle, but I feel I am starting to forget many things since I do not apply them practically most of the times..&lt;/p&gt;
+&lt;p&gt;I also listen to some podcasts, mostly the Founders podcast talking about great entrepreneurs who came before us.. But I had never made any notes out of them yet.&lt;/p&gt;
+&lt;p&gt;I am writing this post also to just know my process myself, and see what short-comings are in it..&lt;/p&gt;
+&lt;p&gt;Some of the actions I feel I can take to improve the process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Maintain a page/blog where I summarize the content in a few short points, and if I ever need to actually go in deep and see what I learned, I can always go and read my highlights.&lt;/li&gt;
+&lt;li&gt;Mostly read only the things I can apply in short term. For example:
+&lt;ol&gt;
+&lt;li&gt;I should ideally read only those self-help books which can actually help me with my current situation!!!&lt;/li&gt;
+&lt;li&gt;For technical things, I cannot always just read what I can apply on job immediately since that would limit the breadth I can explore, so I should atleast try to do a POC, implement whatever the author is talking about if it&amp;rsquo;s a hands-on thing, or read the corresponding code myself if it is something open-source for example..&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;If I am reading something just for the entertainment, then nothing needs to be done per se to remember or anything.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With respect to all this, I would now try to list down all the things I have open for reading at the moment in my Kindle, and see what I know from them so far, and decide whether or not I want to continue reading those. This will be continuously added in &lt;a href=&#34;../continuous-reading-zone/index.md&#34;&gt;continous reading zone&lt;/a&gt; blog..&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Fitness Track Part 2</title>
       <link>https://singhcoder.github.io/posts/fitness-track-part-2/</link>
