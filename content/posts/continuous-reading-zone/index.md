@@ -87,6 +87,11 @@ I haven't done justice in writing summaries atm, I need to visit my highlights t
     - job has very few opportunities to distinguish yourself by developing relevant skills
     - job focuses on something you think is useless or even bad for the world
     - job forces you to work with the people you really dislike
+- [Essentialism]
+  - This I read hard-copy rather than on Kindle but the book talks about how to do less but better.
+  - Explore - identify the few important things from trivial many. I don't have to, but I choose to.
+  - Eliminate - cut out those trivial things: clarify, dare, uncommit, edit, limit
+  - Execute - remove obstacles and make execution effortless: buffer, subtract, progress, flow, focus
 - [No Filter: The Inside Story of Instagram](https://www.amazon.in/NO-FILTER-Sarah-Frier/dp/1982126809)
   - The book is about the store of Instagram and how it came to be.
   - I read it a long time back and do not have a strong recollection of it.
