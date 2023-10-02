@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://singhcoder.github.io/tags/articles/</loc>
+    <lastmod>2023-10-02T18:47:46+05:30</lastmod>
+  </url><url>
+    <loc>https://singhcoder.github.io/tags/books/</loc>
+    <lastmod>2023-10-02T18:47:46+05:30</lastmod>
+  </url><url>
     <loc>https://singhcoder.github.io/posts/continuous-reading-zone/</loc>
     <lastmod>2023-10-02T18:47:46+05:30</lastmod>
   </url><url>
@@ -9,6 +15,12 @@
     <lastmod>2023-10-02T18:47:46+05:30</lastmod>
   </url><url>
     <loc>https://singhcoder.github.io/posts/</loc>
+    <lastmod>2023-10-02T18:47:46+05:30</lastmod>
+  </url><url>
+    <loc>https://singhcoder.github.io/tags/reading/</loc>
+    <lastmod>2023-10-02T18:47:46+05:30</lastmod>
+  </url><url>
+    <loc>https://singhcoder.github.io/tags/</loc>
     <lastmod>2023-10-02T18:47:46+05:30</lastmod>
   </url><url>
     <loc>https://singhcoder.github.io/posts/learning_to_learn/</loc>
@@ -21,9 +33,6 @@
     <lastmod>2023-09-30T16:31:59+05:30</lastmod>
   </url><url>
     <loc>https://singhcoder.github.io/posts/fitness-track-part-2/</loc>
-    <lastmod>2023-09-30T16:31:59+05:30</lastmod>
-  </url><url>
-    <loc>https://singhcoder.github.io/tags/</loc>
     <lastmod>2023-09-30T16:31:59+05:30</lastmod>
   </url><url>
     <loc>https://singhcoder.github.io/posts/fitness-track/</loc>

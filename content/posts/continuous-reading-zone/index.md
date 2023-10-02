@@ -1,6 +1,7 @@
 +++
 title = 'Continuous Reading Zone'
 date = 2023-10-02T18:47:46+05:30
+tags = ['books', 'reading', 'articles']
 draft = false
 +++
 

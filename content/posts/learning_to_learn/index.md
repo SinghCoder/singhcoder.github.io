@@ -1,6 +1,7 @@
 +++
 title = 'Learning to learn'
 date = 2023-10-02T17:06:00+05:30
+tags = ['reading']
 draft = false
 +++
 
