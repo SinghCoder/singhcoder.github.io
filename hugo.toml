@@ -1,12 +1,39 @@
 baseURL = 'https://singhcoder.github.io/'
 languageCode = 'en-us'
-title = 'My Personal Blog'
+title = 'Harpinder Jot Singh'
 theme = 'flat'
 googleAnalytics = 'G-TR6P06RWHL'
 disqusShortname = 'singhcoder'
 [params]
-  description = "SinghCoder's personal blog"
+  description = 'Building Qordinate — coordination without the back-and-forth.'
   images = ['site-feature-image.jpg']
   google_site_verification = 'nrXJC1Q97Lp2aEB5iMkD7nNX0Mg3X2btPqho_kWMUts'
 [social]
   twitter = 'singhhcoder'
+  linkedin = 'singhcoder'
+
+[menu]
+  [[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 10
+  [[menu.main]]
+  name = 'Now'
+  url = '/now/'
+  weight = 20
+  [[menu.main]]
+  name = 'Projects'
+  url = '/#projects'
+  weight = 30
+  [[menu.main]]
+  name = 'Writing'
+  url = '/posts/'
+  weight = 40
+  [[menu.main]]
+  name = 'Talks'
+  url = '/talks/'
+  weight = 50
+  [[menu.main]]
+  name = 'Contact'
+  url = 'mailto:harpinderjots@gmail.com'
+  weight = 60

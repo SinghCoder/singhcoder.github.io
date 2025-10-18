@@ -1,0 +1,8 @@
+{{ $volunteering := .Site.Data.volunteering }}
+{{ range $volunteering }}
+<div class="card">
+  <h3>{{ .role }}</h3>
+  <div class="text-muted mb-2">{{ .period }} • {{ .org }}</div>
+  <p>{{ .description }}</p>
+</div>
+{{ end }}

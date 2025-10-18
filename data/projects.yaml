@@ -1,0 +1,41 @@
+- name: Robin
+  period: Jun 2024
+  org: DevRev
+  description: AI-powered digital personal assistant that filters out noise in your life by acting as your sidekick. It performs actions and handles communication when it can and only leaves the important stuff for you.
+  skills: LangChain, Large Language Models (LLM), GPT-4, Python
+- name: Second Brain
+  period: Aug 2023
+  org: Personal Project
+  description: Digital assistant implementing four-step process to capture, organize, refine, and share information. Designed algorithms for task prioritization and searchable knowledge base, enhancing information management.
+  skills: LangChain, Slack, Large Language Models (LLM)
+  link: https://github.com/singhcoder/second-brain
+- name: Compiler Construction
+  period: Jan 2020 - Apr 2020
+  org: BITS Pilani
+  description: Implemented compiler for custom language in C. Implemented lexical analyzer, syntax analyzer, semantic analyzer, and code generator modules.
+  skills: C, Compiler Design
+- name: Concurrent TCP Webserver
+  period: Apr 2020
+  org: BITS Pilani
+  description: Implemented pre-threaded webserver supporting HTTP GET requests. Client requests handled in stages by pool of threads created in beginning. All I/O on sockets is nonblocking.
+  skills: C, Network Programming, Threading
+- name: Shell Development
+  period: Apr 2020
+  org: BITS Pilani
+  description: Implemented command-line shell with custom features using low-level system programming and network programming in Unix. Features include pipelining, I/O redirection, creating shared memory and TCP connection with server.
+  skills: C, Unix Programming, System Programming
+- name: Web Platform for Spatial Data Analysis
+  period: Jun 2019 - Jul 2019
+  org: ISRO/IIRS
+  description: Web-based platform for time series analysis of various indexes used to analyze vegetation, water level using Landsat satellite data. Added customized indices via GUI and visualized terrain profile along path using DEMs.
+  skills: Python, Django, HTML/CSS, JavaScript, Open Data Cube
+- name: Web Platform for Blind Coding
+  period: Feb 2019 - Mar 2019
+  org: Coding Club BITS Pilani
+  description: Developed web platform for solving programming problems by writing code but not being able to see what is written. Used HTML, CSS, JavaScript for frontend and integrated JDoodle compiler for handling simultaneous requests from users.
+  skills: HTML, CSS, JavaScript, JDoodle API
+- name: Website Development for BOSM 2018
+  period: Aug 2018 - Sep 2018
+  org: Coding Club BITS Pilani
+  description: Designed front end using HTML, CSS and JavaScript for website of BOSM 2018, sports fest of BITS. Website was used by more than 2000 students for accessing registrations, publicity, event schedules during the fest.
+  skills: HTML, CSS, JavaScript

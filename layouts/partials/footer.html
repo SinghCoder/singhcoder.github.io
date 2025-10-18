@@ -1,37 +1,15 @@
 {{ template "partials/disqus.html" . }}
 
 <footer class="footer">
-    <div class="footer-row">
-        {{ range .Site.Sections }}
-            {{ $section := . }}
-            {{ with .OutputFormats.Get "rss" }}
-                <a class="footer-item" href="{{ .Permalink }}">
-                    Feed of {{ $section.Section | humanize }}
-                    <i class="icofont-rss"></i>
-                </a>
-            {{ end }}
-        {{ end }}
-
-        {{ if not (or .IsHome .IsSection) }}
-            {{ $term := . }}
-            {{ with .OutputFormats.Get "rss" }}
-                <a class="footer-item" href="{{ .Permalink }}">
-                    Feed of "{{ $term.Title }}"
-                    <i class="icofont-rss"></i>
-                </a>
-            {{ end }}
-        {{ end }}
-    </div>
-
-    {{ range .Site.Params.footer_rows }}
+    <div class="container">
         <div class="footer-row">
-            {{ range .items }}
-                {{ with .pre }}
-                    <span class="footer-item">{{ . | safeHTML }}</span>
-                {{ else }}
-                    <a class="footer-item" href="{{ .url }}">{{ .name }}</a>
-                {{ end }}
-            {{ end }}
+            <a class="footer-item" href="mailto:harpinderjots@gmail.com">Email</a>
+            <a class="footer-item" href="https://x.com/singhhcoder" target="_blank">Twitter</a>
+            <a class="footer-item" href="https://www.linkedin.com/in/singhcoder/" target="_blank">LinkedIn</a>
+            <a class="footer-item" href="https://qordinate.ai" target="_blank">Qordinate</a>
         </div>
-    {{ end }}
+        <div class="footer-row">
+            <span class="footer-item">© 2025 Harpinder Jot Singh</span>
+        </div>
+    </div>
 </footer>

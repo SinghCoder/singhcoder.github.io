@@ -1,0 +1,16 @@
+{{ $experience := .Site.Data.experience }}
+{{ range $experience }}
+<div class="timeline-item">
+  <div class="timeline-header">
+    <div class="timeline-title">{{ .role }} at {{ .org }}</div>
+    <div class="timeline-meta">{{ .period }} • {{ .location }}</div>
+  </div>
+  {{ if .bullets }}
+  <ul class="timeline-bullets">
+    {{ range .bullets }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end }}

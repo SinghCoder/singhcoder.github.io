@@ -1,0 +1,76 @@
+{{ define "main" }}
+<div class="container">
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Harpinder Jot Singh</h1>
+    <p>Building Qordinate — coordination without the back-and-forth.</p>
+    <div class="cta-group">
+      <a href="https://qordinate.ai/vcf" class="btn btn-primary">Get Qordinate vCard</a>
+      <a href="mailto:harpinderjots@gmail.com" class="btn btn-secondary">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Now Section -->
+  <section id="now" class="section">
+    <h2>What I'm Doing Now</h2>
+    <div class="card">
+      <h3>Qordinate</h3>
+      <p>I'm building Qordinate - a coordination assistant that helps people and their agents work together seamlessly, without the endless back-and-forth.</p>
+      <p>I've spent the past few years thinking about how humans and AI can coordinate better - not just communicate. With Qordinate, we're making that real by bringing autonomous, context-aware agents into the apps people already use.</p>
+      <p><strong>Latest:</strong> Qordinate now works inside Arattai! <a href="https://qordinate.ai/vcf">Download the contact card</a> and DM it on Arattai to get started.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      {{ partial "home-experience.html" . }}
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid grid-2">
+      {{ partial "home-projects.html" . }}
+    </div>
+  </section>
+
+  <!-- Writing Section -->
+  <section id="writing" class="section">
+    <h2>Writing</h2>
+    <div class="card">
+      <h3>Recent Posts</h3>
+      <p>I write about the evolving agent ecosystem, interoperability between assistants, and what it means to build AI products that actually fit into people's lives.</p>
+      <a href="/posts/" class="btn btn-primary">View All Posts</a>
+    </div>
+  </section>
+
+  <!-- Talks Section -->
+  <section id="talks" class="section">
+    <h2>Talks</h2>
+    <div class="card">
+      <h3>MCP Is Less Software Engineering And More Social Engineering</h3>
+      <p>Featured on The Effortless Podcast with Dheeraj Pandey (former CEO of Nutanix, current CEO of DevRev). We discussed AI workflows, federated vs. integrated systems, Python for LLMs, and enterprise automation.</p>
+      <a href="https://theeffortlesspodcast.substack.com/p/mcp-is-less-software-engineering-dea" class="btn btn-primary" target="_blank">Listen to Podcast</a>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards" class="section">
+    <h2>Awards & Recognition</h2>
+    <div class="grid grid-2">
+      {{ partial "home-awards.html" . }}
+    </div>
+  </section>
+
+  <!-- Volunteering Section -->
+  <section id="volunteering" class="section">
+    <h2>Volunteering</h2>
+    <div class="grid grid-2">
+      {{ partial "home-volunteering.html" . }}
+    </div>
+  </section>
+</div>
+{{ end }}

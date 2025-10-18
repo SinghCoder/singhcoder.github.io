@@ -1,0 +1,102 @@
+- org: Stealth AI Startup
+  role: Co-Founder
+  period: Sep 2025 - Present
+  location: Remote (SF Bay Area)
+  bullets:
+    - Solving for time wasted in back-and-forth
+- org: DevRev
+  role: AI/ML Engineer
+  period: Jan 2024 - Sep 2025
+  location: Bengaluru (On-site)
+  bullets:
+    - Worked on AI Agents Reasoning and Computer by DevRev
+    - Implemented system to log AI data into data lake for analysis and model training
+    - Led efforts to improve observability and debuggability for LLM applications using LangSmith and Langfuse
+    - Developed feedback system to gather high-quality user insights
+    - Created dynamic configuration system for real-time AI feature adjustments
+    - Set up automated testing framework for ML validation upon configuration changes
+    - Designed data annotation pipeline with LabelStudio for efficient dataset preparation
+    - Co-Led Retrieval Augmented Generation (RAG) development with modular design
+- org: DevRev
+  role: Member of Technical Staff
+  period: Jun 2021 - Dec 2023
+  location: Bengaluru (On-site)
+  bullets:
+    - Developed and managed workflows platform, supporting webhooks, APIs, and commands powered by AWS Lambda
+    - 105+ custom and 50+ DevRev authored workflows built on platform, resulting in 1,100+ installations
+    - Worked on design and implementation of user interface toolkit for workflows
+    - Created Command-Line Interface (CLI) tool to simplify development and testing process for workflow developers
+    - Enabled both synchronous and asynchronous execution to support use cases from simple commands to complex webhooks
+    - Established testing framework for automated processes with pytest
+    - Enhanced observability and debuggability for developers by providing access to logs and metrics backed by OpenSearch
+    - Contributed significantly to creation of marketplace for workflows, enhancing their visibility and adoption
+- org: Nutanix
+  role: Intern, Member of Technical Staff
+  period: Jan 2021 - Jun 2021
+  location: Bengaluru (On-site)
+  bullets:
+    - Developed Developer Edition of company's Object Storage product, enhancing its usability
+    - Simplified local emulation of Object Storage by integrating it with native file system
+- org: Fiverr
+  role: Professional Freelancer
+  period: Sep 2020 - Dec 2020
+  location: Remote
+  bullets:
+    - Performed various scripting, automation, database interaction gigs using C, Java, Python, and Javascript
+    - Completed 25 projects, worth 2000 USD
+- org: BITS Pilani
+  role: Computer Architecture Teaching Assistant
+  period: Aug 2020 - Dec 2020
+  location: Pilani (On-site)
+  bullets:
+    - Assisted in lab components in course registered by ~200 Freshmen under guidance of Dr. Sudeept Mohan
+    - Role involved doubts solving, and content development for practice of students
+    - Labs involved Verilog programming and developing processor using same
+- org: BITS Pilani
+  role: Student Representative, Student Faculty Council
+  period: Aug 2020 - Dec 2020
+  location: Jhunjhunu (On-site)
+  bullets:
+    - Responsible for representing issues faced by batch-mates in courses to faculty
+    - Finding feasible solutions upon discussion with faculty members
+- org: Salesforce
+  role: Summer Intern
+  period: May 2020 - Jul 2020
+  location: Remote
+  bullets:
+    - Manufacturing cloud helps manufacturers innovate their businesses by providing features like sales agreements, account forecasting, account manager targets
+    - Developed generic, customizable Printable view and PDF generation functionality for Manufacturing Cloud feature
+    - Helped manufacturers generate reports for audit and archival purposes, product got integrated with other clouds for similar functionality
+    - Used Lightning Web Components, AURA Components and Visualforce for UI, APEX for Back-end and SOQL for database interaction
+    - Received pre-placement offer to join company after graduation
+- org: BITS Pilani
+  role: Computer Programming Teaching Assistant
+  period: Jan 2020 - May 2020
+  location: Pilani (On-site)
+  bullets:
+    - Assisted in evaluative lab components in course registered by ~500 freshmen under guidance of Dr. Pratik Narang
+    - Course is first introductory Computer Science course for freshers, programming done using C language
+    - Role involved doubts solving, invigilation, and content development for practice of students
+- org: Coding Club BITS Pilani
+  role: Apogee Joint Coordinator
+  period: May 2019 - Apr 2020
+  location: Pilani (On-site)
+  bullets:
+    - Led team of 70 student developers overseeing conduction of various technical events
+    - Events ranged from Workshops and Hackathons to Online gaming events hosted by Coding Club during APOGEE
+- org: Coding Club BITS Pilani
+  role: Frontend Web Developer
+  period: May 2017 - May 2019
+  location: Pilani (On-site)
+  bullets:
+    - Worked as Frontend Web Developer for 2 years developing frontend for web platforms of various events
+    - Developed frontend for events organized by Coding Club, BITS Pilani
+- org: Indian Institute of Remote Sensing (IIRS), ISRO
+  role: Intern
+  period: May 2019 - Jul 2019
+  location: Dehra Dun (On-site)
+  bullets:
+    - Developed web platform to plot, visualize and analyze satellite imagery data
+    - Implemented graphical visualization using WMS layers served through QGIS
+    - Platform helped researchers quickly test and verify new theories on remote sensing indices
+    - Tech used: Open Data Cube, HTML/CSS, JS, Python, Django

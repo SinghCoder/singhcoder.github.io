@@ -24,11 +24,23 @@
     <meta name="description" content="{{ $description }}" />
 {{ end -}}
 
-<meta property="og:type" content="article" />
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ if $description -}}
     <meta property="og:description" content="{{ $description }}" />
+{{ end -}}
+{{ if .IsHome -}}
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+{{ end -}}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+{{ if $description -}}
+    <meta name="twitter:description" content="{{ $description }}" />
+{{ end -}}
+{{ with .Site.Social.twitter -}}
+    <meta name="twitter:site" content="@{{ . }}" />
 {{ end -}}
 
 
@@ -76,6 +88,7 @@
 <link rel="stylesheet" href="{{ "lib/icofont/icofont.min.css" | relURL }}" />
 <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}" />
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}" />
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon" />
 {{ template "_internal/google_analytics.html" . }}
 {{ template "_internal/twitter_cards.html" . }}

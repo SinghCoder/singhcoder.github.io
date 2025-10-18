@@ -1,0 +1,8 @@
+{{ $awards := .Site.Data.awards }}
+{{ range $awards }}
+<div class="card">
+  <h3>{{ .title }}</h3>
+  <div class="text-muted mb-2">{{ .period }} • {{ .org }}</div>
+  <p>{{ .description }}</p>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+{{ $projects := .Site.Data.projects }}
+{{ range $projects }}
+<div class="card">
+  <h3>{{ .name }}</h3>
+  <div class="text-muted mb-2">{{ .period }} • {{ .org }}</div>
+  <p>{{ .description }}</p>
+  {{ if .skills }}
+  <div class="mb-2">
+    <strong>Skills:</strong> {{ delimit .skills ", " }}
+  </div>
+  {{ end }}
+  {{ if .link }}
+  <a href="{{ .link }}" class="btn btn-primary" target="_blank">View Project</a>
+  {{ end }}
+</div>
+{{ end }}
