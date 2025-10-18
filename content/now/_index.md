@@ -13,7 +13,8 @@ I'm currently focused on building **Qordinate** - a coordination assistant that 
 
 ### Recent Updates
 
-- **Arattai Integration:** Qordinate now works inside Arattai! Users can download the contact card from [qordinate.ai/vcf](https://qordinate.ai/vcf) and DM it on Arattai to get started.
+- **WhatsApp:** Start a chat here → [wa.me/message/KPJBAO7JO5DIK1](https://wa.me/message/KPJBAO7JO5DIK1)
+- **Arattai:** Download the contact card → [qordinate.ai/vcf](https://qordinate.ai/vcf)
 - **Agent Platform:** We're making autonomous, context-aware agents that fit into the apps people already use, rather than requiring new interfaces.
 
 ## The Vision

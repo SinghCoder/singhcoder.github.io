@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="section">
+  <h1 class="mb-3">{{ .Title }}</h1>
+  {{ with .Content }}<div class="mb-3">{{ . }}</div>{{ end }}
+
+  <div class="grid grid-2">
+    {{ range .Paginator.Pages }}
+      <article class="card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="text-muted mb-1">
+          <time datetime="{{ .Date }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+        </div>
+        <p>{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}</p>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ partial "pagination.html" . }}
+</section>
+{{ end }}
+
+

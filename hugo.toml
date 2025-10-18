@@ -12,6 +12,24 @@ disqusShortname = 'singhcoder'
   twitter = 'singhhcoder'
   linkedin = 'singhcoder'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+
+[params.seo]
+  enable_schema = true
+  author = "Harpinder Jot Singh"
+  twitter = "@singhhcoder"
+
 [menu]
   [[menu.main]]
   name = 'About'

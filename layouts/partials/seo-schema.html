@@ -1,0 +1,38 @@
+{{- $site := .Site -}}
+{{- $isHome := .IsHome -}}
+{{- $title := cond $isHome $site.Title .Title -}}
+{{- $desc := "" -}}
+{{- if $isHome -}}
+  {{- with $site.Params.description -}}{{- $desc = . -}}{{- end -}}
+{{- else -}}
+  {{- if .Description -}}{{- $desc = .Description -}}{{- else -}}{{- $desc = .Summary -}}{{- end -}}
+{{- end -}}
+{{- $url := .Permalink -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ if $isHome }}"Person"{{ else }}"BlogPosting"{{ end }},
+  {{ if $isHome }}
+  "name": {{ $site.Title | jsonify }},
+  "url": {{ $url | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "sameAs": [
+    {{ with $site.Social.twitter }}{{ print "https://x.com/" . | jsonify }}{{ end }}{{ if and $site.Social.twitter $site.Social.linkedin }},{{ end }}
+    {{ with $site.Social.linkedin }}{{ print "https://www.linkedin.com/in/" . | jsonify }}{{ end }}
+  ]
+  {{ else }}
+  "headline": {{ $title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "url": {{ $url | jsonify }},
+  "datePublished": {{ .PublishDate | jsonify }},
+  "dateModified": {{ .Lastmod | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ $site.Title | jsonify }}
+  }
+  {{ end }}
+}
+</script>
+
+
